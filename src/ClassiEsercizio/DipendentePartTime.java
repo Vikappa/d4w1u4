@@ -12,13 +12,6 @@ public class DipendentePartTime extends Dipendente {
         return orePerMese*pagaOraria*12;
     }
 
-    @Override
-    public double getStipendio() {
-        return stipendio;
-    }
-
-
-
     public DipendentePartTime(int matricola, int oreMensili, double pagaOraria, Reparto reparto) {
         super(matricola, oreMensili, reparto);
         this.orePerMese = oreMensili;

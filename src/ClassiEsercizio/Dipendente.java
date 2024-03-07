@@ -22,10 +22,6 @@ public abstract class Dipendente implements WorkerInterface{
         return matricola;
     }
 
-    public double getStipendio() {
-        return stipendio;
-    }
-
     public Reparto getReparto() {
         return reparto;
     }

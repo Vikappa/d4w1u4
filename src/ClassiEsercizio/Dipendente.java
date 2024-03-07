@@ -1,10 +1,10 @@
 package ClassiEsercizio;
 
 
-public class Dipendente {
-    private int matricola;
-    private double stipendio;
-    private Reparto reparto;
+public abstract class Dipendente implements WorkerInterface{
+    protected int matricola;
+    protected double stipendio;
+    protected Reparto reparto;
 
     public void setReparto(Reparto reparto) {
         this.reparto = reparto;

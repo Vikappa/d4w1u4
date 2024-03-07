@@ -12,7 +12,7 @@ public class Main {
         Dipendente[] azienda = {aldB, gioS, giaP};
 
         for (int i = 0; i < azienda.length; i++) {
-            System.out.println(("Matricola " + azienda[i].getMatricola()) + " stipendio " + azienda[i].calculateSalary());
+            System.out.println(("Matricola " + azienda[i].getMatricola()) + " ruolo " + azienda[i].getReparto() +" stipendio " + azienda[i].calculateSalary());
 
         }
 

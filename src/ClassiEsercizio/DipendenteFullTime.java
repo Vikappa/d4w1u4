@@ -6,6 +6,11 @@ public class DipendenteFullTime extends Dipendente {
     }
 
     @Override
+    public double calculateSalary() {
+        return stipendio*12;
+    }
+
+    @Override
     public void checkIn() {
         System.out.println("Dipendente, check-in alle 8");
 

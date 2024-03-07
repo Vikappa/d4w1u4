@@ -8,15 +8,22 @@ public class DipendentePartTime extends Dipendente {
     private double stipendio;
 
     @Override
+    public double calculateSalary() {
+        return orePerMese*pagaOraria*12;
+    }
+
+    @Override
     public double getStipendio() {
         return stipendio;
     }
+
+
 
     public DipendentePartTime(int matricola, int oreMensili, double pagaOraria, Reparto reparto) {
         super(matricola, oreMensili, reparto);
         this.orePerMese = oreMensili;
         this.pagaOraria = pagaOraria;
-        this.stipendio = oreMensili*pagaOraria*12;
+        this.stipendio = oreMensili*pagaOraria;
     }
 
     @Override

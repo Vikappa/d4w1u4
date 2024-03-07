@@ -16,6 +16,8 @@ public abstract class Dipendente implements WorkerInterface{
         this.reparto = reparto;
     }
 
+    public abstract double calculateSalary();
+
     public int getMatricola() {
         return matricola;
     }

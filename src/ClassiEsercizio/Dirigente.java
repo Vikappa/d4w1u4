@@ -2,7 +2,6 @@ package ClassiEsercizio;
 
 public class Dirigente extends Dipendente{
 
-    private double stipendio;
 
     @Override
     public double getStipendio() {
@@ -11,6 +10,11 @@ public class Dirigente extends Dipendente{
     public Dirigente(int matricola, double stipendio, Reparto reparto) {
         super(matricola, stipendio, reparto);
         this.stipendio = stipendio*1.1;
+    }
+
+    @Override
+    public double calculateSalary() {
+        return stipendio*14;
     }
 
     @Override
